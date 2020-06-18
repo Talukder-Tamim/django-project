@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    Name: <input type="text" name="search-keyword">
+    <input type="submit" value="Submit">
+</form>
+
+{% if name %}
+   Hello {{ name }}, how are you?
+{% else %}
+   search a name
+{% endif %}
